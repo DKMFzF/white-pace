@@ -11,6 +11,8 @@ const htmlMinify = require('html-minifier');
 const gulpPug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 
+// Start server 
+
 function serve() {
   browserSync.init({
     server: {
@@ -18,6 +20,8 @@ function serve() {
     }
   });
 }
+
+// pipe file.scss
 
 function pagesScss() { 
   const plugins = [
@@ -45,6 +49,8 @@ function pagesScss() {
 //         .pipe(gulp.dest('dist/'))
 //         .pipe(browserSync.reload({stream: true}));
 // }
+
+// pipe file.pug
 
 function pug() {
   return gulp.src('src/pages/**/*.pug')
@@ -91,11 +97,15 @@ function css() {
         .pipe(browserSync.reload({stream: true}));
 }
 
+// pipe scripts.js
+
 function scripts() {
   return gulp.src('src/**/*.js')
           .pipe(gulp.dest('dist/scripts'))
           .pipe(browserSync.reload({stream: true}));
 }
+
+// pipe images
 
 function images() {
   return gulp.src('src/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
@@ -103,22 +113,28 @@ function images() {
     .pipe(browserSync.reload({stream: true}));
 }
 
+// pipe fonts
+
 function fonts() {
     return gulp.src('src/vendor/fonts/**/*.{woff,woff2,ttf}')
             .pipe(gulp.dest('dist/fonts'))
             .pipe(browserSync.reload({stream: true}));
 }
 
+// file monitoring
+
 function watchFiles() {
   gulp.watch(['src/**/*.pug'], pug);
   gulp.watch(['src/**/*.html'], html);
   gulp.watch(['src/**/*.css'], css);
-//   gulp.watch(['src/layouts/**/*.scss'], layoutsScss);
   gulp.watch(['src/pages/**/*.scss'], pagesScss);
   gulp.watch(['src/**/*.js'], scripts);
   gulp.watch(['src/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
   gulp.watch(['src/vendor/fonts/**/*.{woff,woff2,ttf}'], fonts);
+  //   gulp.watch(['src/layouts/**/*.scss'], layoutsScss);
 }
+
+// clean dev dist
 
 function clean() {
   return del('dist');
@@ -126,6 +142,8 @@ function clean() {
 
 const build = gulp.series(clean, gulp.parallel(pug, pagesScss, scripts, images, fonts));
 const watchapp = gulp.parallel(build, watchFiles, serve);
+
+// command in console
 
 exports.html = html;
 exports.pug = pug;
