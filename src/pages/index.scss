@@ -1,7 +1,8 @@
 /* Global style */
 @import '../vendor/fonts.scss';
-@import '../global/variables.scss';
 @import '../global/normalize.scss';
 
-/* Block style */
-@import '../block/content/content.scss';
+/* BEM style */
+@import '../blocks/content/content.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/page/page.scss';

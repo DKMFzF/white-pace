@@ -8,7 +8,6 @@ const autoprefixer = require('autoprefixer');
 const mediaquery = require('postcss-combine-media-query');
 const cssnano = require('cssnano');
 const htmlMinify = require('html-minifier');
-const gulpPug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 
 // Start server 
@@ -29,7 +28,7 @@ function pagesScss() {
       mediaquery(),
       cssnano()
   ];
-  return gulp.src('src/**/*.scss')
+  return gulp.src('src/pages/**/*.scss')
         .pipe(sass())
         .pipe(concat('bundle.css'))
         .pipe(postcss(plugins))
@@ -37,64 +36,28 @@ function pagesScss() {
         .pipe(browserSync.reload({stream: true}));
 }
 
-// function pagesScss() { тут должен быть лайаутScss
-//   const plugins = [
-//       autoprefixer(),
-//       mediaquery(),
-//       cssnano()
-//   ];
-//   return gulp.src('src/pages/**/*.scss')
-//         .pipe(sass())
-//         .pipe(postcss(plugins))
-//         .pipe(gulp.dest('dist/'))
-//         .pipe(browserSync.reload({stream: true}));
-// }
-
-// pipe file.pug
-
-function pug() {
-  return gulp.src('src/pages/**/*.pug')
-        .pipe(gulpPug({
-          pretty: true
-        }))
-        .pipe(gulp.dest('dist/'))
-        .pipe(browserSync.reload({stream: true}));
-}
+// pipe index.html
 
 function html() {
   const options = {
-	  removeComments: true,
-	  removeRedundantAttributes: true,
-	  removeScriptTypeAttributes: true,
-	  removeStyleLinkTypeAttributes: true,
-	  sortClassName: true,
-	  useShortDoctype: true,
-	  collapseWhitespace: true,
+      removeComments: true,
+      removeRedundantAttributes: true,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      sortClassName: true,
+      useShortDoctype: true,
+      collapseWhitespace: true,
       minifyCSS: true,
       keepClosingSlash: true
-	};
-  return gulp.src('src/**/*.html')
-        .pipe(plumber())
-        .on('data', function(file) {
-		      const buferFile = Buffer.from(htmlMinify.minify(file.contents.toString(), options))
-		      return file.contents = buferFile
-		    })
-				.pipe(gulp.dest('dist/'))
-        .pipe(browserSync.reload({stream: true}));
-}
-
-function css() {
-  const plugins = [
-      autoprefixer(),
-      mediaquery(),
-      cssnano()
-  ];
-  return gulp.src('src/**/*.css')
-        .pipe(plumber())
-        .pipe(concat('bundle.css'))
-        .pipe(postcss(plugins))
-				.pipe(gulp.dest('dist/'))
-        .pipe(browserSync.reload({stream: true}));
+  };
+  return gulp.src('src/pages/**/*.html')
+      .pipe(plumber())
+      .on('data', function(file) {
+          const buferFile = Buffer.from(htmlMinify.minify(file.contents.toString(), options))
+          return file.contents = buferFile
+      })
+      .pipe(gulp.dest('dist/'))
+      .pipe(browserSync.reload({stream: true}));
 }
 
 // pipe scripts.js
@@ -124,14 +87,11 @@ function scripts() {
 // file monitoring
 
 function watchFiles() {
-  gulp.watch(['src/**/*.pug'], pug);
   gulp.watch(['src/**/*.html'], html);
-  gulp.watch(['src/**/*.css'], css);
-  gulp.watch(['src/pages/**/*.scss'], pagesScss);
+  gulp.watch(['src/**/*.scss'], pagesScss);
   gulp.watch(['src/**/*.js'], scripts);
 //   gulp.watch(['src/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
 //   gulp.watch(['src/vendor/fonts/**/*.{woff,woff2,ttf}'], fonts);
-  //   gulp.watch(['src/layouts/**/*.scss'], layoutsScss);
 }
 
 // clean dev dist
@@ -140,14 +100,12 @@ function clean() {
   return del('dist');
 }
 
-const build = gulp.series(clean, gulp.parallel(pug, pagesScss, scripts)); // images, fonts
+const build = gulp.series(clean, gulp.parallel(html, pagesScss, scripts));
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
 // command in console
 
 exports.html = html;
-exports.pug = pug;
-exports.css = css;
 exports.pagesScss = pagesScss;
 // exports.images = images;
 exports.clean = clean;
