@@ -29,7 +29,7 @@ function pagesScss() {
       mediaquery(),
       cssnano()
   ];
-  return gulp.src('src/pages/**/*.scss')
+  return gulp.src('src/**/*.scss')
         .pipe(sass())
         .pipe(concat('bundle.css'))
         .pipe(postcss(plugins))
@@ -107,19 +107,19 @@ function scripts() {
 
 // pipe images
 
-function images() {
-  return gulp.src('src/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
-    .pipe(gulp.dest('dist/images'))
-    .pipe(browserSync.reload({stream: true}));
-}
+// function images() {
+//   return gulp.src('src/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
+//     .pipe(gulp.dest('dist/images'))
+//     .pipe(browserSync.reload({stream: true}));
+// }
 
 // pipe fonts
 
-function fonts() {
-    return gulp.src('src/vendor/fonts/**/*.{woff,woff2,ttf}')
-            .pipe(gulp.dest('dist/fonts'))
-            .pipe(browserSync.reload({stream: true}));
-}
+// function fonts() {
+//     return gulp.src('src/vendor/fonts/**/*.{woff,woff2,ttf}')
+//             .pipe(gulp.dest('dist/fonts'))
+//             .pipe(browserSync.reload({stream: true}));
+// }
 
 // file monitoring
 
@@ -129,8 +129,8 @@ function watchFiles() {
   gulp.watch(['src/**/*.css'], css);
   gulp.watch(['src/pages/**/*.scss'], pagesScss);
   gulp.watch(['src/**/*.js'], scripts);
-  gulp.watch(['src/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
-  gulp.watch(['src/vendor/fonts/**/*.{woff,woff2,ttf}'], fonts);
+//   gulp.watch(['src/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
+//   gulp.watch(['src/vendor/fonts/**/*.{woff,woff2,ttf}'], fonts);
   //   gulp.watch(['src/layouts/**/*.scss'], layoutsScss);
 }
 
@@ -140,7 +140,7 @@ function clean() {
   return del('dist');
 }
 
-const build = gulp.series(clean, gulp.parallel(pug, pagesScss, scripts, images, fonts));
+const build = gulp.series(clean, gulp.parallel(pug, pagesScss, scripts)); // images, fonts
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
 // command in console
@@ -149,10 +149,10 @@ exports.html = html;
 exports.pug = pug;
 exports.css = css;
 exports.pagesScss = pagesScss;
-exports.images = images;
+// exports.images = images;
 exports.clean = clean;
 exports.scripts = scripts;
-exports.fonts = fonts;
+// exports.fonts = fonts;
 
 exports.build = build;
 exports.watchapp = watchapp;
