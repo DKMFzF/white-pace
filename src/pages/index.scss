@@ -1,1 +1,5 @@
-/* Все вставки в SCSS */
+/* Добовление компонентов */
+ 
+@import '../global/normalize.scss';
+@import '../vendor/fonts.scss'; // Добавление шрифтов
+@import '../block/content/content.scss';
