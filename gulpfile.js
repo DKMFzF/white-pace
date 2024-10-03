@@ -36,7 +36,7 @@ function pagesScss() {
         .pipe(browserSync.reload({stream: true}));
 }
 
-// pipe index.html
+// pipe file.html
 
 function html() {
   const options = {

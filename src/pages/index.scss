@@ -1,8 +1,13 @@
-/* Global style */
-@import '../vendor/fonts.scss';
-@import '../global/normalize.scss';
+/* global style */
+@import '../common/fonts/fonts.scss';
+@import '../common/global/normalize.scss';
 
-/* BEM style */
+/* general styles*/
+@import '../common/section-content/section-content.scss';
+@import '../common/button/button.scss';
+@import '../common/image-container/image-container.scss';
+
+/* bloks */
+@import '../blocks/page/page.scss';
 @import '../blocks/content/content.scss';
 @import '../blocks/header/header.scss';
-@import '../blocks/page/page.scss';
