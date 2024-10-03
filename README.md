@@ -1,5 +1,9 @@
 # WhitePace
 
+## Selecting the language in the README file
+
+[Click to select the Russian language](READMEru.md)
+
 ## Description of the project
 
 The site is made for a purpose: A project management software that allows your teams to collaborate, plan, analyze and manage everyday tasks
