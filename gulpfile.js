@@ -78,11 +78,11 @@ function scripts() {
 
 // pipe fonts
 
-// function fonts() {
-//     return gulp.src('src/vendor/fonts/**/*.{woff,woff2,ttf}')
-//             .pipe(gulp.dest('dist/fonts'))
-//             .pipe(browserSync.reload({stream: true}));
-// }
+function fonts() {
+    return gulp.src('src/common/fonts/**/*.{woff,woff2,ttf}')
+            .pipe(gulp.dest('dist/fonts'))
+            .pipe(browserSync.reload({stream: true}));
+}
 
 // file monitoring
 
@@ -91,7 +91,6 @@ function watchFiles() {
   gulp.watch(['src/**/*.scss'], pagesScss);
   gulp.watch(['src/**/*.js'], scripts);
 //   gulp.watch(['src/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
-//   gulp.watch(['src/vendor/fonts/**/*.{woff,woff2,ttf}'], fonts);
 }
 
 // clean dev dist
@@ -100,7 +99,7 @@ function clean() {
   return del('dist');
 }
 
-const build = gulp.series(clean, gulp.parallel(html, pagesScss, scripts));
+const build = gulp.series(clean, gulp.parallel(html, pagesScss, scripts, fonts));
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
 // command in console
@@ -110,7 +109,7 @@ exports.pagesScss = pagesScss;
 // exports.images = images;
 exports.clean = clean;
 exports.scripts = scripts;
-// exports.fonts = fonts;
+exports.fonts = fonts;
 
 exports.build = build;
 exports.watchapp = watchapp;

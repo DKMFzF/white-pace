@@ -1,2 +1,14 @@
 @import './_default/button__body_default.scss';
 @import './_login/button__body_login.scss';
+
+.button__body {
+    padding-block: 20px;
+    padding-inline-start: 20px;
+    padding-inline-end: 40px;
+    border-color: transparent;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}

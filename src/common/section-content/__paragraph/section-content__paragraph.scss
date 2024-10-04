@@ -1,3 +1,9 @@
 @import './_blue/section-content__paragraph_blue.scss';
 @import './_blue/section-content__paragraph_blue.scss';
 @import './_white/section-content__paragraph_white.scss';
+
+.section-content__paragraph {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}

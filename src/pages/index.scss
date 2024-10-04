@@ -1,6 +1,7 @@
 /* global style */
 @import '../common/fonts/fonts.scss';
 @import '../common/global/normalize.scss';
+@import '../common/variables/variables.scss';
 
 /* general styles*/
 @import '../common/section-content/section-content.scss';
@@ -11,3 +12,4 @@
 @import '../blocks/page/page.scss';
 @import '../blocks/content/content.scss';
 @import '../blocks/header/header.scss';
+@import '../blocks/section-description-project/section-description-project.scss';
