@@ -1,0 +1,16 @@
+.button__text-arrow {
+    position: relative;
+}
+
+.button__text-arrow::after {
+    content: '';
+    position: absolute;
+    display: block;
+    inset-block-end: 4px;
+    inset-inline-end: -23px;
+    block-size: 12px;
+    inline-size: 12px;
+    background-image: url('./images/svg/arrow-button.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
