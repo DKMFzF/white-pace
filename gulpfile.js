@@ -70,11 +70,11 @@ function scripts() {
 
 // pipe images
 
-// function images() {
-//   return gulp.src('src/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
-//     .pipe(gulp.dest('dist/images'))
-//     .pipe(browserSync.reload({stream: true}));
-// }
+function images() {
+  return gulp.src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
+    .pipe(gulp.dest('dist/images/'))
+    .pipe(browserSync.reload({stream: true}));
+}
 
 // pipe fonts
 
@@ -90,7 +90,6 @@ function watchFiles() {
   gulp.watch(['src/**/*.html'], html);
   gulp.watch(['src/**/*.scss'], pagesScss);
   gulp.watch(['src/**/*.js'], scripts);
-//   gulp.watch(['src/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
 }
 
 // clean dev dist
@@ -99,14 +98,14 @@ function clean() {
   return del('dist');
 }
 
-const build = gulp.series(clean, gulp.parallel(html, pagesScss, scripts, fonts));
+const build = gulp.series(clean, gulp.parallel(html, pagesScss, scripts, fonts, images));
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
 // command in console
 
 exports.html = html;
 exports.pagesScss = pagesScss;
-// exports.images = images;
+exports.images = images;
 exports.clean = clean;
 exports.scripts = scripts;
 exports.fonts = fonts;

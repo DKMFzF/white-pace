@@ -4,6 +4,7 @@
 @import './__title/section-description-project__title.scss';
 @import './__paragraph/section-description-project__paragraph.scss';
 
-// .section-description-project {
-//     gap: 60px;
-// }
+.section-description-project {
+    position: relative;
+    z-index: 1;
+}
