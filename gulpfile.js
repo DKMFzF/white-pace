@@ -64,7 +64,7 @@ function html() {
 
 function scripts() {
   return gulp.src('src/**/*.js')
-          .pipe(gulp.dest('dist/scripts'))
+          .pipe(gulp.dest('dist/'))
           .pipe(browserSync.reload({stream: true}));
 }
 
