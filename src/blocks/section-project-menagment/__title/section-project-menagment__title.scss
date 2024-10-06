@@ -1,0 +1,10 @@
+.section-project-menagment__title {
+    line-height: 89px;
+}
+
+.section-project-menagment__title::after {
+    inset-inline-start: 0;
+    inset-block-start: 361px;
+    inline-size: 482px;
+    block-size: 29px;
+}

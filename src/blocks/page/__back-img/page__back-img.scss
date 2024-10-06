@@ -1,10 +1,8 @@
 @import './_full-screen/page__back-img_full-screen.scss';
+@import './_circle/page__back-img_circie.scss';
 
 .page__back-img {
     position: absolute;
-    z-index: -1;
-    inset-block-start: 270px;
-    background-size: cover;
-    background-position: center;
+    z-index: -2;
     background-repeat: no-repeat;
 }
