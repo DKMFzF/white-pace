@@ -1,0 +1,10 @@
+.section-customise__title {
+    line-height: 84px;
+}
+
+.section-customise__title::after {
+    inset-block-start: 144px;
+    inset-inline-start: 165px;
+    inline-size: 295px;
+    block-size: 19px;
+}
