@@ -1,6 +1,9 @@
 @import './__text-elements/section-content__text-elements.scss';
 @import './__title/section-content__title.scss';
 @import './__paragraph/section-content__paragraph.scss';
+@import './_center-text/section-content_center-text.scss';
+@import './__container-title/section-content__text.scss';
+@import './__container-paragraph/section-content__container-paragraph.scss';
 
 .section-content {
     display: flex;
