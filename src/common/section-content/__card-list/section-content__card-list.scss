@@ -1,0 +1,6 @@
+.section-content__card-list {
+    margin-block: 63px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
