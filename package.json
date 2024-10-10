@@ -4,7 +4,6 @@
   "description": "pet-project",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'Привет!'",
     "check": "prettier --check './src//*.{pug,html,scss,css,js}'",
 		"format": "prettier --write './src//.{pug,html,scss,css,js}'",
 		"lint": "stylelint './src/**/.{scss,css}'",
