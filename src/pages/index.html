@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -143,11 +143,11 @@
             <div
               class="section-content__text-elements section-customise__text-elements"
             >
-              <h1
+              <h2
                 class="section-content__title section-content__title_black section-content__title_underline section-customise__title"
               >
                 Customise it to your needs
-              </h1>
+              </h2>
               <p
                 class="section-content__paragraph section-customise__paragraph"
               >
@@ -172,11 +172,11 @@
               class="section-content__text-elements section-tariff-plan__text-elements"
             >
               <div class="section-content__container-title">
-                <h1
+                <h2
                   class="section-content__title section-content__title_black section-content__title_underline section-content_center-text section-tariff-plan__title"
                 >
                   Choose Your Plan
-                </h1>
+                </h2>
               </div>
               <div class="section-content__container-paragraph">
                 <p
@@ -190,34 +190,37 @@
             </div>
             <div class="section-content__card-container">
               <ul class="section-content__card-list">
-                <!-- add-template-card -->
+                <!-- add #card-template -->
               </ul>
             </div>
           </div>
         </section>
       </main>
     </div>
-
     <!-- tempate-card-price -->
     <template id="card-template">
       <li class="section-content__list-item-card">
-        <article class="card">
-          <div class="card__text-container"></div>
-          <div class="card__list">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+        <article class="card card_hover-color">
+          <header class="card__header">
+            <div class="card__text-container">
+              <h3 class="card__title"></h3>
+              <span class="card__price"></span>
+              <p class="card__description-card"></p>
+            </div>
+          </header>
+          <div class="card__container-list">
+            <ul class="card__list"></ul>
           </div>
-          <div>
-            <button></button>
-          </div>
+          <footer class="card__footer">
+            <div class="button">
+              <button class="button__body button__card-default button__body_full-text">
+                <span class="button__text-arrow">Get Started</span>
+              </button>
+            </div>
+          </footer>
         </article>
       </li>
     </template>
   </body>
+  <script src="main.js"></script>
 </html>

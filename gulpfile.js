@@ -10,6 +10,11 @@ const cssnano = require('cssnano');
 const htmlMinify = require('html-minifier');
 const sass = require('gulp-sass')(require('sass'));
 
+const ulify = require('gulp-uglify');
+const concatGulp = require('gulp-concat');
+
+const order = require('gulp-order');
+
 // Start server 
 
 function serve() {
@@ -64,7 +69,13 @@ function html() {
 
 function scripts() {
   return gulp.src('src/**/*.js')
-          .pipe(gulp.dest('dist/'))
+          .pipe(order([
+            'src/common/card/cards.js',
+            'src/scripts/index.js'
+          ], { base: './' }))
+          .pipe(concatGulp('main.js'))
+          .pipe(ulify())
+          .pipe(gulp.dest('dist'))
           .pipe(browserSync.reload({stream: true}));
 }
 
