@@ -200,24 +200,26 @@
     <!-- tempate-card-price -->
     <template id="card-template">
       <li class="section-content__list-item-card">
-        <article class="card card_hover-color">
-          <header class="card__header">
-            <div class="card__text-container">
-              <h3 class="card__title"></h3>
-              <span class="card__price"></span>
-              <p class="card__description-card"></p>
+        <article class="card">
+          <div class="card__container">
+            <header class="card__header">
+              <div class="card__text-container">
+                <h3 class="card__title"></h3>
+                <span class="card__price"></span>
+                <p class="card__description-card"></p>
+              </div>
+            </header>
+            <div class="card__container-list">
+              <ul class="card__list"></ul>
             </div>
-          </header>
-          <div class="card__container-list">
-            <ul class="card__list"></ul>
+            <footer class="card__footer">
+              <div class="button">
+                <button class="button__body button__card-default button__body_full-text">
+                  <span class="button__text-arrow">Get Started</span>
+                </button>
+              </div>
+            </footer>
           </div>
-          <footer class="card__footer">
-            <div class="button">
-              <button class="button__body button__card-default button__body_full-text">
-                <span class="button__text-arrow">Get Started</span>
-              </button>
-            </div>
-          </footer>
         </article>
       </li>
     </template>

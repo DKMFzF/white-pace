@@ -1,0 +1,17 @@
+.card__list-item {
+    margin-inline-start: 37px;
+}
+
+.card__list-item::marker {
+    content: url('./images/svg/status-list-icon.svg');
+    display: block;
+    fill: blue;
+}
+
+.card:hover .card__list-item::marker {
+    fill: blue;
+}
+
+.card__list-item:not(:last-child) {
+    margin-block-end: 29px;
+}

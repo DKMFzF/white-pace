@@ -11,12 +11,14 @@ function createCard(card) {
     cardElement.querySelector('.card__description-card').textContent = card.header.description;
 
     // card-list
-    Object.keys(card.list).map(item => {
-        cardElement.querySelector('.card__list').append(createCardListItem(item));
+    const listFragment = document.createDocumentFragment();
+    Object.values(card.list).map(item => {
+        listFragment.append(createCardListItem(item));
     });
+    cardElement.querySelector('.card__list').append(listFragment);
 
     return cardElement;
-};
+}
 
 function createCardListItem(item) {
     const listItemCard = document.createElement('li');
@@ -25,7 +27,10 @@ function createCardListItem(item) {
     return listItemCard;
 }
 
+// add in DOM
+const fragment = document.createDocumentFragment();
 initialCard.forEach(card => {
     const cardElement = createCard(card);   
-    list.append(cardElement);
+    fragment.append(cardElement);
 });
+list.append(fragment);
