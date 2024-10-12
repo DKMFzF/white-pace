@@ -1,28 +1,28 @@
-const list = document.querySelector('.section-content__card-list');
+const list = document.querySelector('.section-content__card-price-list');
 
 function createCard(card) {
-    // init
-    const cardTemplate = document.querySelector('#card-template').content;
-    const cardElement = cardTemplate.querySelector('.section-content__list-item-card').cloneNode(true);
+    const cardTemplate = document.querySelector('#card-price-template').content;
+    const cardElement = cardTemplate.querySelector('.section-content__list-item-card-price').cloneNode(true);
 
-    // card-header
-    cardElement.querySelector('.card__title').textContent = card.header.title;
-    cardElement.querySelector('.card__price').textContent = card.header.price;
-    cardElement.querySelector('.card__description-card').textContent = card.header.description;
+    cardElement.querySelector('.card-price__title').textContent = card.header.title;
+    cardElement.querySelector('.card-price__price').textContent = card.header.price;
+    cardElement.querySelector('.card-price__description-card').textContent = card.header.description;
 
-    // card-list
+    // add-card-item
     const listFragment = document.createDocumentFragment();
-    Object.values(card.list).map(item => {
-        listFragment.append(createCardListItem(item));
+    Object.values(card.list).map((item, index) => {
+        listFragment.append(createCardListItem(item, index));
     });
-    cardElement.querySelector('.card__list').append(listFragment);
+    cardElement.querySelector('.card-price__list').append(listFragment);
 
     return cardElement;
 }
 
-function createCardListItem(item) {
+// create-card-item
+function createCardListItem(item, index) {
     const listItemCard = document.createElement('li');
-    listItemCard.className = 'card__list-item';
+    listItemCard.className = 'card-price__list-item';
+    if (index === 3 || index === 5) listItemCard.classList.add('card-price__list_additional-inset');
     listItemCard.textContent = item;
     return listItemCard;
 }

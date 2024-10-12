@@ -1,12 +1,12 @@
 @import './_default/button__body_default.scss';
 @import './_login/button__body_login.scss';
-@import './_free-btn/button_body_free-btn.scss';
+@import './_sector-free-btn/button_body_sector-free-btn.scss';
 @import './_full-text/button__body_full-text.scss';
-@import './__card-default/button__card-default.scss';
+@import './_card-price-default/button_card-price-default.scss';
 
 .button__body {
     padding-block: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     letter-spacing: 0.2px;

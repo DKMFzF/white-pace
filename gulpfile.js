@@ -70,7 +70,7 @@ function html() {
 function scripts() {
   return gulp.src('src/**/*.js')
           .pipe(order([
-            'src/common/card/cards.js',
+            'src/common/card-price/cards-price-data.js',
             'src/scripts/index.js'
           ], { base: './' }))
           .pipe(concatGulp('main.js'))

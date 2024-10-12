@@ -1,0 +1,25 @@
+@import './__container/card-price__container.scss';
+@import './__container-list/card-price__container-list.scss';
+@import './__description-card/card-price__description-card.scss';
+@import './__footer/card-price__footer.scss';
+@import './__header/card-price__header.scss';
+@import './__list-item/card-price__list-item.scss';
+@import './__list/card-price__list.scss';
+@import './__price/card-price__price.scss';
+@import './__text-container/card-price__text-container.scss';
+@import './__title/card-price__title.scss';
+@import './_hover-color/card-price_hover-color.scss';
+
+.card-price {
+    border: 2px dashed $attention-accent-color;
+    border-radius: 50px;
+    font-family: $main-font-family, sans-serif;
+
+    &:hover {
+        color: $dark-accent-color;
+    }
+
+    &:hover .card-price__list-item::before {
+        background-color: $accent-color;
+    }
+}

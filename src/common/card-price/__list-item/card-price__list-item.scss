@@ -1,0 +1,25 @@
+.card-price__list-item {
+    position: relative;
+    padding-inline-start: 35px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        inline-size: 20px;
+        block-size: 20px;
+        background-color: $no-active-marker-color;
+        mask: url('./images/svg/status-list-icon.svg') no-repeat center;
+        -webkit-mask: url('./images/svg/status-list-icon.svg') no-repeat center;
+        background-size: contain;
+        position: absolute;
+        inset-inline-start: -3px;
+        inset-block-start: -2px;
+    }
+
+    &:not(:last-child) {
+        margin-block-end: 30px;
+    }
+}
+
+// КОСТЫЛЬ: вынужденная мера применения такого подключения файла / a forced measure of using such a file connection
+@import './_additional-inset/card-price__list_additional-inset.scss';

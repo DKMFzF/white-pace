@@ -1,10 +1,9 @@
-// file variables
+// font
+$main-font-family: 'Inter', sans-serif;
 
-:root {
-    // fonts
-    --main-font-family: 'Inter', sans-serif;
-
-    // Coloros
-    --accent-color: rgba(79, 156, 249, 1);
-    --background-color-images: rgba(196, 222, 253, 1);
-}
+// color
+$accent-color: rgba(79, 156, 249, 1);
+$dark-accent-color: rgba(4, 56, 115, 1);
+$attention-accent-color: rgba(255, 228, 146, 1);
+$background-color-images: rgba(196, 222, 253, 1);
+$no-active-marker-color: rgba(33, 37, 41, 1); 
