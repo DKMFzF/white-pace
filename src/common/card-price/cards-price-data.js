@@ -1,5 +1,6 @@
-const initialCard = [
+const dataCardPrice = [
     {
+        cardName: 'free',
         header: {
             title: 'Free',
             price: '$0',
@@ -15,6 +16,7 @@ const initialCard = [
         }
     },
     {
+        cardName: 'personal',
         header: {
             title: 'Personal',
             price: '$11.99',
@@ -30,6 +32,7 @@ const initialCard = [
         }
     },
     {
+        cardName: 'organization',
         header: {
             title: 'Organization',
             price: '$49.99',
