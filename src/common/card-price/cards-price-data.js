@@ -10,9 +10,15 @@ const dataCardPrice = [
             devices: 'Sync unlimited devices',
             uploads: '10 GB monthly uploads',
             size: '200 MB max. note size',
-            customize: 'Customize Home dashboard and access extra widgets',
+            customize: {
+                firstLine: 'Customize Home dashboard and access extra',
+                secondLine: 'widgets'
+            },
             connect: 'Connect primary Google Calendar account',
-            tasks: 'Add due dates, reminders, and notifications to your tasks' 
+            tasks: {
+                firstLine: 'Add due dates, reminders, and notifications to',
+                secondLine: 'your tasks'
+            }
         }
     },
     {

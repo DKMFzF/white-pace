@@ -1,0 +1,5 @@
+.card-price:hover .card-price__list-item_not-support {
+    color: $no-active-marker-color;
+    opacity: 20%;
+    text-decoration: line-through;
+}

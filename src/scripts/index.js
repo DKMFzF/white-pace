@@ -30,7 +30,7 @@ function createCardListItem(card, item, index, dataListCard) {
     // add specific-class 
     if (index === 3 || index === 5) listItemCard.classList.add('card-price__list_additional-inset');
     if (cardname == 'free' && dataListCard.length >= 2 || cardname == 'personal' && dataListCard.length >= 4) {
-        listItemCard.classList.add('not-support');
+        listItemCard.classList.add('card-price__list-item_not-support');
     }
 
     listItemCard.textContent = item;

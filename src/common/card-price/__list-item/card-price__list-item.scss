@@ -1,3 +1,5 @@
+@import './_not-support/card-price__list-item_not-support.scss';
+
 .card-price__list-item {
     position: relative;
     padding-inline-start: 35px;
@@ -21,5 +23,9 @@
     }
 }
 
-// КОСТЫЛЬ: вынужденная мера применения такого подключения файла / a forced measure of using such a file connection
+.card-price:hover .card-price__list-item:not(.card-price__list-item_not-support)::before {
+    background-color: $accent-color;
+}
+
+// КОСТЫЛЬ: вынужденная мера подключения файла внизу каскада / a forced measure of using such a file connection
 @import './_additional-inset/card-price__list_additional-inset.scss';

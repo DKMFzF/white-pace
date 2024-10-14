@@ -28,7 +28,8 @@
         color: $dark-accent-color;
     }
 
-    &:hover .card-price__list-item::before {
-        background-color: $accent-color;
+    &:hover .card-price__list-item_not-support {
+        transition: opacity 0.5s ease,
+            color 0.5s ease;
     }
 }
