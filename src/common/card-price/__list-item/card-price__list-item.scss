@@ -1,5 +1,9 @@
 @import './_not-support/card-price__list-item_not-support.scss';
 
+.card-price:hover .card-price__list-item::before {
+    transition: background-color 0.5s ease;
+}
+
 .card-price__list-item {
     position: relative;
     padding-inline-start: 35px;
@@ -16,6 +20,7 @@
         position: absolute;
         inset-inline-start: -3px;
         inset-block-start: -2px;
+        transition: background-color 0.5s ease, transform 0.5s ease;
     }
 
     &:not(:last-child) {

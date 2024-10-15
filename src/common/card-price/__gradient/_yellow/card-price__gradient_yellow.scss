@@ -1,0 +1,5 @@
+.card-price__gradient_yellow {
+    z-index: -2;
+    background: linear-gradient(90deg, $attention-accent-color);
+    transition: opacity 0.5s ease;
+}

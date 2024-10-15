@@ -9,27 +9,52 @@
 @import './__text-container/card-price__text-container.scss';
 @import './__title/card-price__title.scss';
 @import './_hover-color/card-price_hover-color.scss';
+@import './__gradient/card-price__gradient.scss';
 
 .card-price {
-    border: 2px dashed $attention-accent-color;
+    position: relative;
+    border: 2px solid $attention-accent-color;
     border-radius: 50px;
     font-family: $main-font-family, sans-serif;
+    overflow: hidden;
+    
 
     transition: transform 0.5s ease, 
         border-color 0.5s ease, 
         box-shadow 0.5s ease, 
-        color 0.5s ease;
+        color 0.5s ease,
+        border-style 0.5s ease;
 
     &:hover {
-        transform: translateY(-15px) scale(1.015);
-        border-color: transparent;
-        border-style: solid;
-        box-shadow: 0 0 30px rgba(0 0 0 / 0.08);
+        transform: translateX(-12px) translateY(-22px);
+        border-color: $dark-accent-color;
+        box-shadow: 1px 1px 0 $dark-accent-color, 1px 2px 0 #35a7ff, 2px 4px 1px #35a7ff,
+            3px 6px 1px #35a7ff, 4px 8px 1px #50c878, 5px 8px 1px #50c878,
+            6px 10px 0 #50c878, 7px 12px 1px #ffe74c, 8px 14px 1px #ffe74c,
+            9px 16px 1px #ffe74c, 10px 18px 1px #ff5964, 11px 20px 1px #ff5964,
+            12px 22px 0 #ff5964;
         color: $dark-accent-color;
+        background-repeat: no-repeat;
     }
 
-    &:hover .card-price__list-item_not-support {
-        transition: opacity 0.5s ease,
-            color 0.5s ease;
+    &:hover .card-price__gradient {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    &:hover .card-price__list-item:not(.card-price__list-item_not-support)::before {
+        transform: scale(1.1);
+        transition: transform 0.5s ease, background-color 0.5s ease;
+    }
+
+    &:hover .button_card-price-default {
+        border-color: transparent;
+        background-color: $accent-color;
+        color: #fff;
+        transition: background-color 0.5s ease,
+            color 0.5s ease,
+            border-color 0.5s ease,
+            transform 0.5s ease,
+            box-shadow 0.5s ease;
     }
 }

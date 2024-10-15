@@ -1,0 +1,10 @@
+@import './_yellow/card-price__gradient_yellow.scss';
+@import './_white/card-price__gradient_white.scss';
+
+.card-price__gradient {
+    block-size: 100%;
+    inline-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0;
+}

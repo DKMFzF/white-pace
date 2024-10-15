@@ -1,5 +1,8 @@
+.card-price__list-item_not-support {
+    transition: color 0.5s ease, opacity 0.5s ease;
+}
+
 .card-price:hover .card-price__list-item_not-support {
     color: $no-active-marker-color;
-    opacity: 20%;
-    text-decoration: line-through;
+    opacity: 40%;
 }
