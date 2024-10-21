@@ -1,8 +1,9 @@
-// @import './_full-screen/page__back-img_full-screen.scss';
-// @import './_circle/page__back-img_circie.scss';
+@import './_full-screen/page__back-img_full-screen.scss';
+@import './_circie-project-menagment/page__back-img_circie-project-menagment.scss';
+@import './_circie-work/page__back-img_circie-work.scss';
 
 .page__back-img {
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     background-repeat: no-repeat;
 }
