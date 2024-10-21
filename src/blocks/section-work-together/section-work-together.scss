@@ -3,7 +3,4 @@
 @import './__text-elements/section-work-together__text-elements.scss';
 @import './__title/section-work-together__title.scss';
 @import './__paragraph/section-work-together__paragraph.scss';
-
-.section-work-together {
-    padding-block-start: 102px;
-}
+@import './__container-padding/section-work-together__container-padding.scss';

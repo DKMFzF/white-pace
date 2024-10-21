@@ -1,0 +1,10 @@
+.section-content__title_underline-yellow::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    display: block;
+    background-image: url('./images/svg/underline-yellow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
