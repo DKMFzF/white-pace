@@ -1,0 +1,5 @@
+.section-sponsors__list-sponsors {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+    grid-gap: 15%;
+}

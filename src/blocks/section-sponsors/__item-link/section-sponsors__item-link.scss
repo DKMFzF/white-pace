@@ -1,0 +1,10 @@
+.section-sponsors__item-link {
+    display: block;
+    opacity: 80%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.section-sponsors__item-link:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
