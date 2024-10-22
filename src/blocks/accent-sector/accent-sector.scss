@@ -1,0 +1,12 @@
+@import './__container/accent-sector__container.scss';
+@import './__container-text/accent-sector__container-text.scss';
+@import './__container-bg/accent-sector__container-bg.scss';
+@import './__bg-text/accent-sector__bg-text.scss';
+
+.accent-sector {
+    position: relative;
+    z-index: 1;
+    border-radius: 100px;
+    overflow: clip;
+    background-color: white;
+}

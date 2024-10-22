@@ -9,11 +9,11 @@ const mediaquery = require('postcss-combine-media-query');
 const cssnano = require('cssnano');
 const htmlMinify = require('html-minifier');
 const sass = require('gulp-sass')(require('sass'));
-
 const ulify = require('gulp-uglify');
 const concatGulp = require('gulp-concat');
-
 const order = require('gulp-order');
+
+const copy = require('gulp-copy');
 
 // Start server 
 
@@ -82,8 +82,8 @@ function scripts() {
 // pipe images
 
 function images() {
-  return gulp.src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
-    .pipe(gulp.dest('dist/images/'))
+  return gulp.src('src/**/*.{jpg,png,svg,gif,ico,webp,avif,mp4,ogv}', { encoding: false })
+    .pipe(gulp.dest('dist/'))
     .pipe(browserSync.reload({stream: true}));
 }
 
