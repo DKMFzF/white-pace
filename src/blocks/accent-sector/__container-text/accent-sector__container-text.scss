@@ -1,8 +1,11 @@
 .accent-sector__container-text {
+    display: flex;
     position: sticky;
     inset-block-start: 50%;
-    text-align: center;
-    transform: scaleY(1.1) scaleX(1.45);
-    opacity: 2%;
+    // text-align: center;
+    // transform: scaleY(1.1) scaleX(1.45);
+    justify-content: space-between;
+    gap: 20px;
+    opacity: 3%;
     text-transform: uppercase;
 }
