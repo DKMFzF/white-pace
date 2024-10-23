@@ -2,9 +2,11 @@
 @import './__title/section-your-work__title.scss';
 @import './__paragraph/section-your-work__paragraph.scss';
 @import './__button/section-your-work__button.scss';
-@import './__back-img/section-your-work__back-img.scss';
 @import './__section-content/section-your-work__section-content.scss';
+@import './__container-back-video/section-description-project__container-back-video.scss';
+@import './__bg-img/section-your-work__bg-img.scss';
 
 .section-your-work {
-    background-color: rgba(4, 56, 115, 1);
+    position: relative;
+    z-index: 0;
 }

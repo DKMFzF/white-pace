@@ -1,6 +1,30 @@
 .page__back-img_circie-work {
-    inset-block-start: -191px;
+    inset-block-start: 412%;
     background-image: url('./images/png/circle-section-work.png');
     width: 502px;
     height: 761px;
+}
+
+@media (width <= 2560px) and (height <= 1080px) {
+    .page__back-img_circie-work {
+        inset-block-start: 392%;
+    }
+}
+
+@media (width <= 2100px) and (height <= 1080px) {
+    .page__back-img_circie-work {
+        inset-block-start: 402%;
+    }
+}
+
+@media (width <= 1920px) and (height <= 1080px) {
+    .page__back-img_circie-work {
+        inset-block-start: 414%;
+    }
+}
+
+@media (width <= 1440px) and (height <= 1080px)  {
+    .page__back-img_circie-work {
+        inset-block-start: 458%;
+    }
 }
