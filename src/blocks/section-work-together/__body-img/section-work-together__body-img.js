@@ -1,15 +1,15 @@
 // Outer circles
-const movingCircle = document.getElementById('movingCircle');
-const movingCircle2 = document.getElementById('movingCircle2');
-const movingCircle3 = document.getElementById('movingCircle3');
-const movingCircle4 = document.getElementById('movingCircle4');
-const movingCircle5 = document.getElementById('movingCircle5');
+const movingCircle = document.querySelector('#movingCircle');
+const movingCircle2 = document.querySelector('#movingCircle2');
+const movingCircle3 = document.querySelector('#movingCircle3');
+const movingCircle4 = document.querySelector('#movingCircle4');
+const movingCircle5 = document.querySelector('#movingCircle5');
 
 // inner circles
-const movingInsideCircle = document.getElementById('movingInsideCircle');
-const movingInsideCircle2 = document.getElementById('movingInsideCircle2');
-const movingInsideCircle3 = document.getElementById('movingInsideCircle3');
-const movingInsideCircle4 = document.getElementById('movingInsideCircle4');
+const movingInsideCircle = document.querySelector('#movingInsideCircle');
+const movingInsideCircle2 = document.querySelector('#movingInsideCircle2');
+const movingInsideCircle3 = document.querySelector('#movingInsideCircle3');
+const movingInsideCircle4 = document.querySelector('#movingInsideCircle4');
 
 // const size circle external
 const radius = 280;
