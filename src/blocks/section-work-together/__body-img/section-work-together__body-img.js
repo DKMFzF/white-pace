@@ -11,8 +11,8 @@ const center = { x: 400, y: 400 };
 let angle = [0, 0];
 
 function animate() {
-  angle[0] += 0.005;
-  angle[1] += 0.01;
+  angle[0] += 0.003;
+  angle[1] += 0.005;
 
   // other circle
   outerCircles.forEach((circle, index) => {

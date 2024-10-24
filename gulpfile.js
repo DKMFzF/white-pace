@@ -82,7 +82,7 @@ function scripts() {
 // pipe images
 
 function images() {
-  return gulp.src('src/**/*.{jpg,png,svg,gif,ico,webp,avif,mp4,ogv}', { encoding: false })
+  return gulp.src('src/**/*.{jpg,png,svg,gif,ico,webp,webm,avi,avif,mp4,ogv}', { encoding: false })
     .pipe(gulp.dest('dist/'))
     .pipe(browserSync.reload({stream: true}));
 }
