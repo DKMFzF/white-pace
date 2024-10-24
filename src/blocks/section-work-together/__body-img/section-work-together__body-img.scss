@@ -1,6 +1,10 @@
 @import './_setting/section-work-together__body-img_setting.scss';
 
 .section-work-together__body-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 50%;
     background-color: transparent;
-    inline-size: 710px;
 }
