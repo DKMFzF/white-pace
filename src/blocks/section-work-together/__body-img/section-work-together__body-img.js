@@ -1,25 +1,33 @@
+// Outer circles
 const movingCircle = document.getElementById('movingCircle');
 const movingCircle2 = document.getElementById('movingCircle2');
 const movingCircle3 = document.getElementById('movingCircle3');
 const movingCircle4 = document.getElementById('movingCircle4');
 const movingCircle5 = document.getElementById('movingCircle5');
 
+// inner circles
 const movingInsideCircle = document.getElementById('movingInsideCircle');
 const movingInsideCircle2 = document.getElementById('movingInsideCircle2');
 const movingInsideCircle3 = document.getElementById('movingInsideCircle3');
 const movingInsideCircle4 = document.getElementById('movingInsideCircle4');
 
-const radius = 280; // Радиус большого круга
-const centerX = 400; // Центр большого круга по X
-const centerY = 400; // Центр большого круга по Y
+// const size circle external
+const radius = 280;
+const centerX = 400;
+const centerY = 400;
 
-const radiusInsetCrcle = 135; // Радиус маленького круга
-const centerInsetCrcleX = 400; // Центр маленького круга по X
-const centerInsetCrcleY = 400; // Центр маленького круга по Y
 
+// const size circle inset
+const radiusInsetCrcle = 135;
+const centerInsetCrcleX = 400;
+const centerInsetCrcleY = 400;
+
+// counting degrees
 let angle = 0;
 let angleInsetCircle = 0;
-function animate() { 
+
+function animate() {
+    // speed animation
     angle += 0.005;
     angleInsetCircle += 0.01;
 
@@ -71,4 +79,4 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-animate(); // Запускаем анимацию
+animate(); // start animation
