@@ -31,6 +31,7 @@ function animate() {
     angle += 0.005;
     angleInsetCircle += 0.01;
 
+    // Outer circles
     const x1 = centerX + radius * Math.cos(angle); 
     const y1 = centerY + radius * Math.sin(angle); 
     movingCircle.setAttribute('cx', x1);
@@ -56,23 +57,24 @@ function animate() {
     movingCircle5.setAttribute('cx', x5);
     movingCircle5.setAttribute('cy', y5);
 
-    const x6 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(angleInsetCircle); 
-    const y6 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(angleInsetCircle); 
+    // inner circles
+    const x6 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(-angleInsetCircle); 
+    const y6 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(-angleInsetCircle); 
     movingInsideCircle.setAttribute('cx', x6);
     movingInsideCircle.setAttribute('cy', y6);
 
-    const x7 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(angleInsetCircle + Math.PI / 2); 
-    const y7 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(angleInsetCircle + Math.PI / 2); 
+    const x7 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(-angleInsetCircle + -Math.PI / 2); 
+    const y7 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(-angleInsetCircle + -Math.PI / 2); 
     movingInsideCircle2.setAttribute('cx', x7);
     movingInsideCircle2.setAttribute('cy', y7);
 
-    const x8 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(angleInsetCircle + Math.PI);
-    const y8 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(angleInsetCircle + Math.PI);
+    const x8 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(-angleInsetCircle + -Math.PI);
+    const y8 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(-angleInsetCircle + -Math.PI);
     movingInsideCircle3.setAttribute('cx', x8);
     movingInsideCircle3.setAttribute('cy', y8);
 
-    const x9 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(angleInsetCircle + Math.PI + (Math.PI / 2));
-    const y9 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(angleInsetCircle + Math.PI + (Math.PI / 2));
+    const x9 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(-angleInsetCircle + -Math.PI - (Math.PI / 2));
+    const y9 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(-angleInsetCircle + -Math.PI - (Math.PI / 2));
     movingInsideCircle4.setAttribute('cx', x9);
     movingInsideCircle4.setAttribute('cy', y9);
 
