@@ -63,13 +63,13 @@ function animate() {
     movingInsideCircle.setAttribute('cx', x6);
     movingInsideCircle.setAttribute('cy', y6);
 
-    const x7 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(-angleInsetCircle + -Math.PI / 2); 
-    const y7 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(-angleInsetCircle + -Math.PI / 2); 
+    const x7 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(-angleInsetCircle - Math.PI / 2); 
+    const y7 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(-angleInsetCircle - Math.PI / 2); 
     movingInsideCircle2.setAttribute('cx', x7);
     movingInsideCircle2.setAttribute('cy', y7);
 
-    const x8 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(-angleInsetCircle + -Math.PI);
-    const y8 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(-angleInsetCircle + -Math.PI);
+    const x8 = centerInsetCrcleX + radiusInsetCrcle * Math.cos(-angleInsetCircle - Math.PI);
+    const y8 = centerInsetCrcleY + radiusInsetCrcle * Math.sin(-angleInsetCircle - Math.PI);
     movingInsideCircle3.setAttribute('cx', x8);
     movingInsideCircle3.setAttribute('cy', y8);
 
