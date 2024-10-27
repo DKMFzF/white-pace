@@ -1,0 +1,14 @@
+.page__container-element-page {
+    display: none;
+    animation: opacityScale 2000ms;
+}
+
+@keyframes opacityScale {
+    0% {
+        filter: blur(56px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}

@@ -1,0 +1,15 @@
+@import './__title/preloader__title.scss';
+@import './__rainbow-marker-loader/preloader__rainbow-marker-loader.scss';
+@import './__bg-preloader/preloader__bg-preloader.scss';
+@import './__container-bg-preloader/preloader__container-bg-preloader.scss';
+
+.preloader {
+  block-size: 100vh;
+  inline-size: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: black;
+}
