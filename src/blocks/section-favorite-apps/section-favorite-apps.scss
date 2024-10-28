@@ -1,0 +1,11 @@
+@import './__text-elements/section-favorite-apps__text-elements.scss';
+@import './__section/section-favorite-apps__section.scss';
+@import './__container-back-video/section-favorite-apps__container-back-video.scss';
+@import './__content/section-favorite-apps__content.scss';
+@import './__body-img/section-favorite-apps__body-img.scss';
+@import './__section-content/section-favorite-apps__section-content.scss';
+
+.section-favorite-apps {
+    position: relative;
+    z-index: 0;
+}
