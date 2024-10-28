@@ -1,5 +1,5 @@
 .section-sponsors__list-sponsors {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(min-content, max-content));
-    grid-gap: 15%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
 }

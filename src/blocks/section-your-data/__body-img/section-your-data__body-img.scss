@@ -1,3 +1,8 @@
+@import './_setting/section-your-data__body-img_setting.scss';
+
 .section-your-data__body-img {
+    display: flex;
+    justify-content: center;
+    inline-size: 50%;
     background-color: transparent;
 }
