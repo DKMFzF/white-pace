@@ -9,3 +9,48 @@
     position: relative;
     z-index: 0;
 }
+
+// bg image styles
+
+.container-svg {
+    position: relative;
+    block-size: 470px;
+    inline-size: 582px;
+}
+
+.container-logo {
+    position: absolute;
+    inline-size: 220px;
+    inset-block: 42%;
+    z-index: 1;
+    inset-inline: 39%;
+}
+
+.container-logo-content {
+    position: absolute;
+    inline-size: 220px;
+    inset-block: 51%;
+    z-index: 1;
+    inset-inline: 44.9%;
+}
+
+.container-ellipse {
+    position: absolute;
+    display: flex;
+    z-index: 0;
+}
+
+.container-ellipse-first {
+    inset-inline-start: calc(100% - 81.5%);
+    inset-block-start: calc(100% - 106%);
+}
+
+.container-ellipse-second {
+    inset-inline-start: calc(100% - 95%);
+    inset-block-start: calc(100% - 70%);
+}
+
+.container-ellipse-three {
+    inset-inline-start: calc(100% - 67%);
+    inset-block-start: calc(100% - 70%);
+}
