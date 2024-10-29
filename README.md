@@ -2,7 +2,8 @@
 
 ## Selecting the language in the README file
 
-[Click to select the Russian language](READMEru.md)
+[Click to select the Russian language](docs/READMEru.md)
+[Click to select the Russian language (LICENSE)](docs/LICENSEru.md)
 
 ## Description of the project
 
