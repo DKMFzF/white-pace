@@ -1,0 +1,12 @@
+@import './__container-logo/container-svg__container-logo.scss';
+@import './__container-logo-content/container-svg__container-logo-content.scss';
+@import './__container-ellipse/container-svg__container-ellipse.scss';
+@import './__container-ellipse-first/container-svg__container-ellipse-first.scss';
+@import './__container-ellipse-second/container-svg__container-ellipse-second.scss';
+@import './__container-ellipse-three/container-svg__container-ellipse-three.scss';
+
+.container-svg {
+    position: relative;
+    block-size: 470px;
+    inline-size: 582px;
+}
