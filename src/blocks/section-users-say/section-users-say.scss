@@ -1,0 +1,11 @@
+@import './__section/section-users-say__section.scss';
+@import './__content/section-users-say__content.scss';
+@import './__title/section-users-say__title.scss';
+@import './__user-says/section-users-say__user-says.scss';
+
+.section-users-say {
+    position: relative;
+    z-index: 1;
+    border-radius: 100px;
+    background-color: #fff;
+}

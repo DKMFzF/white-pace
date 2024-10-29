@@ -1,0 +1,6 @@
+.section-users-say__user-says {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-block: 63px;
+}

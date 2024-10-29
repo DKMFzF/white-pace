@@ -1,0 +1,10 @@
+.section-users-say__title {
+    text-align: center;
+}
+
+.section-users-say__title::after {
+    block-size: 24px;
+    inline-size: 371px;
+    inset-block-start: 61px;
+    inset-inline-start: 624px;
+}

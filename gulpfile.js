@@ -13,8 +13,6 @@ const ulify = require('gulp-uglify');
 const concatGulp = require('gulp-concat');
 const order = require('gulp-order');
 
-const copy = require('gulp-copy');
-
 // Start server 
 
 function serve() {
@@ -70,7 +68,8 @@ function html() {
 function scripts() {
   return gulp.src('src/**/*.js')
           .pipe(order([
-            'src/common/card-price/cards-price-data.js',
+            'src/common/bd-cards/cards-price-data.js',
+            'src/common/bd-cards/cards-users-says-data.js',
             'src/scripts/index.js'
           ], { base: './' }))
           .pipe(concatGulp('main.js'))
