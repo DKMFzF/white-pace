@@ -1,9 +1,18 @@
-const list = document.querySelector('.section-content__card-price-list');
+const listCardPrice = document.querySelector('.section-content__card-price-list');
+const listCardUsers = document.querySelector('.section-users-say__list-user-says');
 
 // add card-price in DOM
-const fragment = document.createDocumentFragment();
+const fragmentCardPrice = document.createDocumentFragment();
 dataCardPrice.forEach(card => {
-    const cardElement = createCard(card);
-    fragment.append(cardElement);
+    const cardElement = createCardPrice(card);
+    fragmentCardPrice.append(cardElement);
 });
-list.append(fragment);
+listCardPrice.append(fragmentCardPrice);
+
+// add card-users-says in DOM
+const fragmentCardUsersSays = document.createDocumentFragment();
+dataCardUserSays.forEach(card => {
+    const cardElement = createCardUserSays(card);
+    fragmentCardUsersSays.append(cardElement);
+});
+listCardUsers.append(fragmentCardUsersSays);

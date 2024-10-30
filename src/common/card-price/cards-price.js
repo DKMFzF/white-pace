@@ -1,4 +1,4 @@
-function createCard(card) {
+function createCardPrice(card) {
     const cardTemplate = document.querySelector('#card-price-template').content;
     const cardElement = cardTemplate.querySelector('.section-content__list-item-card-price').cloneNode(true);
 
@@ -10,7 +10,7 @@ function createCard(card) {
     const listFragment = document.createDocumentFragment();
     Object.values(card.list).map((item, index) => {
         listFragment.append(
-            createCardListItem(card, item, index, 
+            createCardListItemPrice(card, item, index, 
                 [...listFragment.querySelectorAll('.card-price__list-item')])
         );
     });
@@ -20,7 +20,7 @@ function createCard(card) {
 }
 
 // create-card-item
-function createCardListItem(card, item, index, dataListCard) {
+function createCardListItemPrice(card, item, index, dataListCard) {
     const listItemCard = document.createElement('li');
     const cardname = card.cardName;
     listItemCard.className = 'card-price__list-item';
