@@ -1,0 +1,5 @@
+.section-users-say__list-user-says {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 35px;
+}
