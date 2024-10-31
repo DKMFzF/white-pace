@@ -1,0 +1,10 @@
+@import './__title/information__title.scss';
+@import './__item/information__item.scss';
+@import './__link/information__link.scss';
+
+.information {
+    padding-inline-start: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

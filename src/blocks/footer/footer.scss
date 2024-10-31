@@ -1,0 +1,19 @@
+@import './__content/footer__content.scss';
+@import './__additional-information/footer__additional-information.scss';
+@import './__container-main-logo/footer__container-main-logo.scss';
+@import './__main-logo/footer__main-logo.scss';
+@import './__information-main/footer__information-main.scss';
+@import './__container-description-main/footer__container-description-main.scss';
+@import './__tit-title/footer__tit-title.scss';
+@import './__container-tit-description/footer__container-tit-description.scss';
+@import './__information-tit/footer__information-tit.scss';
+@import './__meta-data-website/footer__meta-data-website.scss';
+@import './__container-meta/footer__container-meta.scss';
+@import './__svg-body/footer__svg-body.scss';
+@import './__container-scl-ntw/footer__container-scl-ntw.scss';
+
+.footer {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: #000;
+}

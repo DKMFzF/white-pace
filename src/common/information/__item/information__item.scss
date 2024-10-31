@@ -1,0 +1,8 @@
+.information__item {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.information__item:not(:last-child) {
+    margin-block-end: 15px;
+}
