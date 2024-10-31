@@ -3,10 +3,12 @@
 @import './__title/section-users-say__title.scss';
 @import './__user-says/section-users-say__user-says.scss';
 @import './__list-user-says/section-users-say__list-user-says.scss';
+@import './__container-btns-scroll/section-users-say__container-btns-scroll.scss';
+@import './__container-arrow-buttons/section-users-say__container-arrow-buttons.scss';
 
 .section-users-say {
     position: relative;
     z-index: 1;
-    border-radius: 100px;
+    border-radius: 150  px;
     background-color: #fff;
 }

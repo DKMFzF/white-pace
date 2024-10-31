@@ -1,0 +1,9 @@
+@import './_avatar-inset-first/card-user-says__img_avatar-inset-first.scss';
+@import './_avatar-inset-second/card-user-says__img_avatar-inset-second.scss';
+@import './_avatar-inset-third/card-user-says__img_avatar-inset-third.scss';
+
+.card-user-says__img {
+    position: absolute;
+    z-index: -1;
+    inline-size: 100%;
+}

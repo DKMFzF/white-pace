@@ -1,0 +1,20 @@
+.card-user-says__container {
+    padding-block: 60px;
+    padding-inline: 40px;
+    block-size: 480px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    background-color: $accent-color;
+    font-family: 'Inter', sans-serif;
+    transition: box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+.card-user-says__container:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 85px 17px rgb(0 0 0 / 0.2);
+    transition: box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}

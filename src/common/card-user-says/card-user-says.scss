@@ -1,3 +1,15 @@
+@import './__container/card-user-says__container.scss';
+@import './__img/card-user-says__img.scss';
+@import './__img-container/card-user-says__img-container.scss';
+@import './__comment/card-user-says__comment.scss';
+@import './__user-place-work/card-user-says__user-place-work.scss';
+
 .card-user-says {
-    max-inline-size: 472px;
+    min-inline-size: 288px;
+    transition: transform 0.5s ease;
+}
+
+.card-user-says:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
 }

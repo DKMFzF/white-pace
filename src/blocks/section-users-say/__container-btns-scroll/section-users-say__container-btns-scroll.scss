@@ -1,0 +1,11 @@
+@import './__container-btn/section-users-say__container-btn.scss';
+@import './__container-btn-arrow/section-users-say__container-btn-arrow.scss';
+@import './__btn-bg/section-users-say__btn-bg.scss';
+@import './__btn-arrow/section-users-say__btn-arrow.scss';
+
+.section-users-say__container-btns-scroll {
+    inline-size: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
