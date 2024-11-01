@@ -1,0 +1,13 @@
+.page__noise::before{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: .03;  
+    z-index: 1000;
+    pointer-events: none;
+    background: url('./images/gif/noise.gif') ;
+}
