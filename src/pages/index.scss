@@ -4,6 +4,12 @@
 @import '../common/variables/variables.scss';
 @import '../common/global/main-cursor/main-cursor.scss';
 
+// animation
+@import '../common/gs-container-sc-hd/gs-container-sc-hd.scss';
+@import '../common/gs-item-sc-hd/gs-item-sc-hd.scss';
+@import '../common/gs-container-sc-ds-pj/gs-container-sc-ds-pj.scss';
+@import '../common/gs-item-sc-ds-pj/gs-item-sc-ds-pj.scss';
+
 /* general styles*/
 @import '../common/section-content/section-content.scss';
 @import '../common/ps-fx-sector/ps-fx-sector.scss';
