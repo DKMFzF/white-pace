@@ -1,0 +1,13 @@
+.scroll-progress {
+    position: fixed;
+    z-index: 10;
+    inset-block-end: 10px;
+    inset-inline-end: 10px;
+    font-family: monospace;
+    text-transform: uppercase;
+    color: #fff;
+    mix-blend-mode: difference;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}

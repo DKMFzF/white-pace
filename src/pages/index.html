@@ -28,8 +28,19 @@
         id="content"
         name="main-content"
         class="page__container-element-page"
+        style="padding-block-start: 10vh; position: relative;"
       >
-        <header id="header" name="header" class="header">
+        <div class="main-cursor main-cursor__cursor"></div>
+        <div class="main-cursor main-cursor__cursor-follower"></div>
+        <div class="github-link">
+          <a href="https://github.com/DKMFzF/white-pace.git">
+            github
+          </a>
+        </div>
+        <div class="scroll-progress">
+          (scroll <span id="scrollProgress">0%</span>)
+        </div>
+        <header id="header" name="header" class="header" style="block-size: 10vh;">
           <div class="header__logo-container">
             <svg viewBox="0 0 191 35" class="header__logo">
               <use href="./images/svg/logo.svg#logo"></use>
@@ -63,87 +74,81 @@
           </div>
         </header>
 
-        <div class="container-main">
-          <main class="content">
-            <div class="content__section">
-              <section
-                class="section-description-project page__container-back-img"
-              >
-                <div class="section-description-project__container-back-video">
-                  <div class="page__container-bg-video">
-                    <video
-                      class="page__bg-video"
-                      autoplay
-                      muted
-                      loop
-                      playsinline
-                    >
-                      <source
-                        src="./videos/video-section-description-project.avi"
-                        type="video/avi"
-                      />
-                      <source
-                        src="./videos/video-section-description-project.webm"
-                        type="video/webm"
-                      />
-                      <source
-                        src="./videos/video-section-description-project.mp4"
-                        type="video/mp4"
-                      />
-                      ERROR: BRAWSER NOT SUPPORT BACKGORUND
-                    </video>
-                  </div>
+        <div class="ps-fx-sector" id="sectionDescriptionProject" name="section-description-project">
+          <div class="content__section">
+            <section
+              class="section-description-project page__container-back-img"
+            >
+              <div class="section-description-project__container-back-video">
+                <div class="page__container-bg-video">
+                  <video
+                    class="page__bg-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                  >
+                    <source
+                      src="./videos/video-section-description-project.avi"
+                      type="video/avi"
+                    />
+                    <source
+                      src="./videos/video-section-description-project.webm"
+                      type="video/webm"
+                    />
+                    <source
+                      src="./videos/video-section-description-project.mp4"
+                      type="video/mp4"
+                    />
+                    ERROR: BRAWSER NOT SUPPORT BACKGORUND
+                  </video>
                 </div>
-                <div class="section-description-project__content">
-                  <div class="page__section">
+              </div>
+              <div class="section-description-project__content">
+                <div class="page__section">
+                  <div
+                    class="image-container section-description-project__image"
+                  >
                     <div
-                      class="image-container section-description-project__image"
+                      class="section-content section-description-project__section-content"
                     >
-                      <div
-                        class="section-content section-description-project__section-content"
-                      >
-                        <div class="section-content__text-elements">
-                          <div
-                            class="section-description-project__container-title"
+                      <div class="section-content__text-elements">
+                        <div
+                          class="section-description-project__container-title"
+                        >
+                          <h1
+                            class="section-content__title section-description-project__title"
                           >
-                            <h1
-                              class="section-content__title section-description-project__title"
-                            >
-                              Get More Done with whitepace
-                            </h1>
-                          </div>
-                          <div
-                            class="section-description-project__container-paragraph"
-                          >
-                            <p
-                              class="section-content__paragraph section-content__paragraph_blue section-description-project__paragraph"
-                            >
-                              Project management software that enables your
-                              teams to collaborate, plan, analyze and manage
-                              everyday tasks
-                            </p>
-                          </div>
+                            Get More Done with whitepace
+                          </h1>
                         </div>
-                        <div class="button section-description-project__button">
-                          <button
-                            class="button__body button__body_default button_body_sector-free-btn section-description-project__button_bg-color"
+                        <div
+                          class="section-description-project__container-paragraph"
+                        >
+                          <p
+                            class="section-content__paragraph section-content__paragraph_blue section-description-project__paragraph"
                           >
-                            <span class="button__text-arrow"
-                              >Try Whitepace free</span
-                            >
-                          </button>
+                            Project management software that enables your
+                            teams to collaborate, plan, analyze and manage
+                            everyday tasks
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="page__back-img page__back-img_full-screen"
-                    aria-hidden="true"
-                    loading="lazy"
-                  ></div>
                 </div>
-              </section>
-            </div>
+                <div
+                  class="page__back-img page__back-img_full-screen"
+                  aria-hidden="true"
+                  loading="lazy"
+                ></div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="container-main" style="margin-block-end: 350px;">
+          <main class="content">
             <div class="accent-sector">
               <div class="accent-sector__container-bg">
                 <div class="accent-sector__container-text">
@@ -1302,7 +1307,7 @@
             </div>
           </main>
         </div>
-        <div class="container-footer">
+        <div id="footerContainer" name="footer-container" class="container-footer" style="display: none; position: fixed; z-index: -10; inset-block-end: 0; inset-inline: 0;">
           <footer id="footer" name="footer" class="footer">
             <div class="footer__content">
               <div class="footer__additional-information">
@@ -1524,5 +1529,6 @@
       </li>
     </template>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="main.js"></script>
 </html>

@@ -352,10 +352,18 @@
 //  * My styles
 //  */
 
+// * {
+//   cursor: none;
+// }
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
