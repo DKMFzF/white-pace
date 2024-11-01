@@ -1,0 +1,8 @@
+.header__list-item {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.header__list-item:not(:first-child) {
+    margin-inline-start: 32px;
+}

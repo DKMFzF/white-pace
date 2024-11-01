@@ -1,3 +1,23 @@
 @import './__logo-link/header__logo-link.scss';
-@import './__logo/header__logo.scss';
 @import './__container-elements/header__container-elements.scss';
+@import './__logo-container/header__logo-container.scss';
+@import './__navigation/header__navigation.scss';
+@import './__navigation-list/header__navigation-list.scss';
+@import './__list-item/header__list-item.scss';
+
+.header {
+    padding-block: 16px; 
+    padding-inline: 220px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    inline-size: 100%;
+    color: #fff;
+    background-color: #000;
+    transition: top 0.3s;
+}

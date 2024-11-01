@@ -1,2 +1,4 @@
-@import '__navigation/container-elements__navigation.scss';
-@import '__buttons/container-elements__buttons.scss';
+.header__container-elements {
+    display: flex;
+    align-items: center;
+}
