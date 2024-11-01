@@ -1,44 +1,59 @@
-// // Находим элементы курсора
-// const cursor = document.querySelector('.main-cursor__cursor');
-// const follower = document.querySelector('.main-cursor__cursor-follower');
+const coords = { x: 0, y: 0 };
+const circles = document.querySelectorAll(".main-cursor__cursor-element");
+const activeElement = document.querySelectorAll(".active-element");
 
-// // Координаты для основного курсора и фолловера
-// let mouseX = 0;
-// let mouseY = 0;
-// let followerX = 0;
-// let followerY = 0;
+const colors = [
+  "#fff",
+];
 
-// // Функция обновления позиции курсора
-// function updateCursorPosition(event) {
-//     // Получаем координаты курсора относительно окна
-//     mouseX = event.clientX;
-//     mouseY = event.clientY;
+circles.forEach(function (circle, index) {
+  circle.x = 0;
+  circle.y = 0;
+  circle.style.backgroundColor = colors[index % colors.length];
+});
 
-//     // Обновляем позицию основного курсора с анимацией
-//     gsap.to(cursor, { x: mouseX, y: mouseY, duration: 0.1 });
-// }
+window.addEventListener("mousemove", function(e){
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+  
+});
 
-// // Функция для анимации фолловера с задержкой
-// function animateFollower() {
-//     // Обновляем координаты фолловера с небольшим отставанием
-//     followerX += (mouseX - followerX) * 0.15;
-//     followerY += (mouseY - followerY) * 0.15;
+function animateCircles() {
+  
+  let x = coords.x;
+  let y = coords.y;
+  
+  circles.forEach(function (circle, index) {
+    circle.style.left = x - 12 + "px";
+    circle.style.top = y - 12 + "px";
+    
+    circle.style.scale = (circles.length - index) / circles.length;
+    
+    circle.x = x;
+    circle.y = y;
 
-//     // Используем GSAP для плавного перемещения
-//     gsap.to(follower, { x: followerX, y: followerY, duration: 0.1 });
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+  });
+ 
+  requestAnimationFrame(animateCircles);
+}
 
-//     // Продолжаем анимацию на следующем кадре
-//     requestAnimationFrame(animateFollower);
-// }
+animateCircles();
 
-// // Добавляем обработчик для движения мыши
-// document.addEventListener('mousemove', updateCursorPosition);
+activeElement.forEach(item => {
+    item.addEventListener("mouseenter", function() {
+        circles.forEach(circle => {
+          circle.style.transform = "scale(3)"; // Увеличиваем круги
+        });
+    });
+});
 
-// // Добавляем обработчик для скролла, чтобы курсор не "прыгал"
-// window.addEventListener('scroll', () => {
-//     gsap.to(cursor, { x: mouseX, y: mouseY, duration: 0 });
-//     gsap.to(follower, { x: followerX, y: followerY, duration: 0 });
-// });
-
-// // Запускаем анимацию фолловера
-// animateFollower();
+activeElement.forEach(item => {
+    item.addEventListener("mouseleave", function() {
+        circles.forEach(circle => {
+          circle.style.transform = "scale(1)"; // Возвращаем к исходному размеру
+        });
+    });
+});

@@ -30,10 +30,11 @@
         class="page__container-element-page"
         style="padding-block-start: 10vh; position: relative;"
       >
-        <div class="main-cursor main-cursor__cursor"></div>
-        <div class="main-cursor main-cursor__cursor-follower"></div>
+        <div id="main-cursor" name="cursor">
+            <div class="main-cursor__cursor-element"></div>
+        </div>
         <div class="github-link">
-          <a href="https://github.com/DKMFzF/white-pace.git">
+          <a href="https://github.com/DKMFzF/white-pace.git" class="active-element">
             github
           </a>
         </div>
@@ -57,15 +58,15 @@
             </nav>
             <div class="container-elements__buttons">
               <div class="button" style="display: inline-block;">
-                <button
-                  class="button__body button__body_login"
+                <button 
+                  class="button__body button__body_login active-element"
                 >
                   <span style="color: #000;">Login</span>
                 </button>
               </div>
               <div class="button" style="display: inline-block; margin-inline-start: 24px;">
                 <button
-                  class="button__body button__body_default button__body_full-text"
+                  class="button__body button__body_default button__body_full-text active-element"
                 >
                   <span class="button__text-arrow">Try Whitepace free</span>
                 </button>
@@ -87,6 +88,7 @@
                     muted
                     loop
                     playsinline
+                    pip="false"
                   >
                     <source
                       src="./videos/video-section-description-project.avi"
@@ -199,7 +201,7 @@
                         </div>
                         <div class="button">
                           <button
-                            class="button__body button__body_default button__body_full-text"
+                            class="button__body button__body_default button__body_full-text active-element"
                           >
                             <span class="button__text-arrow">Get Started</span>
                           </button>
@@ -212,6 +214,7 @@
                           muted
                           loop
                           playsinline
+                          pip="false"
                         >
                           <source
                             src="./videos/video-section-project-menagment.mp4"
@@ -446,7 +449,7 @@
                         </div>
                         <div class="button">
                           <button
-                            class="button__body button__body_default button__body_full-text"
+                            class="button__body button__body_default button__body_full-text active-element"
                           >
                             <span class="button__text-arrow">Try it now</span>
                           </button>
@@ -484,7 +487,7 @@
                         </div>
                         <div class="button">
                           <button
-                            class="button__body button__body_default button__body_full-text"
+                            class="button__body button__body_default button__body_full-text active-element"
                           >
                             <span class="button__text-arrow">Let’s Go</span>
                           </button>
@@ -497,6 +500,7 @@
                           muted
                           loop
                           playsinline
+                          pip="false"
                         >
                           <source
                             src="./videos/video-section-customise.mp4"
@@ -557,6 +561,7 @@
                       muted
                       loop
                       playsinline
+                      pip="false"
                     >
                       <source
                         src="./videos/video-section-description-project.avi"
@@ -603,7 +608,7 @@
                       </div>
                       <div class="button section-your-work__button">
                         <button
-                          class="button__body button__body_default button__body_full-text"
+                          class="button__body button__body_default button__body_full-text active-element"
                         >
                           <span class="button__text-arrow">Try Taskey</span>
                         </button>
@@ -660,7 +665,7 @@
                         </div>
                         <div class="button section-your-data__button">
                           <button
-                            class="button__body button__body_default button__body_full-text"
+                            class="button__body button__body_default button__body_full-text active-element"
                           >
                             <span class="button__text-arrow">Read more</span>
                           </button>
@@ -694,7 +699,7 @@
                               <div
                                 class="section-sponsors__container-image-sponsor"
                               >
-                                <picture>
+                                <picture class="active-element">
                                   <source
                                     srcset="./images/svg/icon-apple.svg"
                                     type="image/svg+xml"
@@ -718,7 +723,7 @@
                               <div
                                 class="section-sponsors__container-image-sponsor"
                               >
-                                <picture>
+                                <picture class="active-element">
                                   <source
                                     srcset="./images/svg/icon-microsoft.svg"
                                     type="image/svg+xml"
@@ -742,7 +747,7 @@
                               <div
                                 class="section-sponsors__container-image-sponsor"
                               >
-                                <picture>
+                                <picture class="active-element">
                                   <source
                                     srcset="./images/svg/icon-slack.svg"
                                     type="image/svg+xml"
@@ -766,7 +771,7 @@
                               <div
                                 class="section-sponsors__container-image-sponsor"
                               >
-                                <picture>
+                                <picture class="active-element">
                                   <source
                                     srcset="./images/svg/icon-google.svg"
                                     type="image/svg+xml"
@@ -803,6 +808,7 @@
                       muted
                       loop
                       playsinline
+                      pip="false"
                     >
                       <source
                         src="./videos/video-section-description-project.avi"
@@ -1212,7 +1218,7 @@
                       </div>
                       <div class="button">
                         <button
-                          class="button__body button__body_default button__body_full-text"
+                          class="button__body button__body_default button__body_full-text active-element"
                         >
                           <span class="button__text-arrow">Read more</span>
                         </button>
@@ -1260,7 +1266,7 @@
                           <use
                             id="btn"
                             name="btn"
-                            class="section-users-say__btn-bg"
+                            class="section-users-say__btn-bg active-element"
                             href="./images/svg/btn-card-users-says.svg#btn-bg"
                           ></use>
                         </svg>
@@ -1268,7 +1274,7 @@
                           <img
                             id="btn"
                             name="btn"
-                            class="section-users-say__btn-arrow"
+                            class="section-users-say__btn-arrow active-element"
                             src="./images/png/card-users-says-btn-arrow.png"
                             alt=""
                             aria-checked="true"
@@ -1285,7 +1291,7 @@
                           <use
                             id="btn"
                             name="btn"
-                            class="section-users-say__btn-bg"
+                            class="section-users-say__btn-bg active-element"
                             href="./images/svg/btn-card-users-says.svg#btn-bg"
                           ></use>
                         </svg>
@@ -1293,7 +1299,7 @@
                           <img
                             id="btn"
                             name="btn"
-                            class="section-users-say__btn-arrow section-users-say__btn-arrow_right"
+                            class="section-users-say__btn-arrow section-users-say__btn-arrow_right active-element"
                             src="./images/png/card-users-says-btn-arrow.png"
                             alt=""
                             aria-checked="true"
@@ -1384,7 +1390,7 @@
                   </div>
                   <div class="button">
                     <button
-                      class="button__body button__body_default button__body_full-text"
+                      class="button__body button__body_default button__body_full-text active-element"
                     >
                       <span class="button__text-arrow">Start today</span>
                     </button>
@@ -1457,7 +1463,7 @@
     <template id="card-price-template">
       <li class="section-content__list-item-card-price">
         <div class="section-content__card">
-          <article class="card-price">
+          <article class="card-price active-element">
             <div class="card-price__gradient card-price__gradient_white"></div>
             <div class="card-price__gradient card-price__gradient_yellow"></div>
             <div class="card-price__container">
@@ -1478,7 +1484,7 @@
               <div class="card-price__footer-container">
                 <footer class="card-price__footer">
                   <div class="button">
-                    <button class="button__body button_card-price-default">
+                    <button class="button__body button_card-price-default active-element">
                       Get Started
                     </button>
                   </div>
@@ -1493,7 +1499,7 @@
     <template id="card-user-says-template">
       <li class="section-content__list-item-card-user-says">
         <div class="section-content__card">
-          <article class="card-user-says">
+          <article class="card-user-says active-element">
             <div class="card-user-says__container">
               <div class="card-user-says__header-container">
                 <header class="card-user-says__header">

@@ -352,9 +352,13 @@
 //  * My styles
 //  */
 
-// * {
-//   cursor: none;
-// }
+* {
+  cursor: none;
+}
+
+html > div {
+  display: none !important;
+}
 
 *,
 *::after,
