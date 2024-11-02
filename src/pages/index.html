@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bundle.css" />
   </head>
   <body class="page">
+    <div id="thrSection" class="thr-container-text"></div>
     <div class="page__noise"></div>
     <div class="page__content">
       <div class="page__preloader">
@@ -1507,7 +1508,7 @@
     </div>
     <!-- tempate-card-price -->
     <template id="card-price-template">
-      <li class="gs-container section-content__list-item-card-price">
+      <li class="section-content__list-item-card-price">
         <div class="section-content__card">
           <article class="card-price active-element">
             <div class="card-price__gradient card-price__gradient_white"></div>
@@ -1583,6 +1584,14 @@
       </li>
     </template>
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://threejs.org/examples/jsm/geometries/TextGeometry.js"></script>
+  <script src="https://threejs.org/examples/jsm/loaders/FontLoader.js"></script>
+  <script src="https://threejs.org/examples/jsm/fonts/helvetiker_regular.typeface.json"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/fonts/helvetiker_regular.typeface.json"></script>
+   -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script src="main.js"></script>

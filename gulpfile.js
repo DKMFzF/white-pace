@@ -68,6 +68,7 @@ function html() {
 function scripts() {
   return gulp.src('src/**/*.js')
           .pipe(order([
+            'src/blocks/thr-container-text/thr-container-text.js',
             'src/common/bd-cards/cards-price-data.js',
             'src/common/bd-cards/cards-users-says-data.js',
             'src/scripts/index.js'
