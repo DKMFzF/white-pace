@@ -6,3 +6,9 @@
     inline-size: 50%;
     overflow: hidden;
 }
+
+@media (width <= 1200px) {
+    .section-project-menagment__container-video {
+        inline-size: 100%;
+    }
+}

@@ -2,7 +2,7 @@
     line-height: 28px;
     letter-spacing: 0.1px;
     text-align: center;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.1035rem + 0.0915vw, 1.25rem);
     color: black;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }

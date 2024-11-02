@@ -2,3 +2,9 @@
     display: flex;
     flex-direction: row;
 }
+
+@media screen and (width <= 1500px) {
+    .header__navigation-list {
+        display: none;
+    }
+}

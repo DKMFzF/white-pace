@@ -3,3 +3,9 @@
     justify-content: center;
     inline-size: 50%;
 }
+
+@media (width <= 1200px) {
+    .section-work-together__section-content {
+        inline-size: 100%;
+    }
+}

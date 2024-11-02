@@ -1,5 +1,12 @@
 .page__section {
     padding-block: 140px;
-    margin-inline: 220px;
+    margin-inline: 10%;
     display: flex;
+}
+
+@media (width <= 1200px) {
+    .page__section {
+        flex-direction: column;
+        align-items: center;
+    }
 }

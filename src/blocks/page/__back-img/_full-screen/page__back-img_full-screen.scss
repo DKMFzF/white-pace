@@ -8,3 +8,9 @@
     filter: saturate(300%);
     opacity: 50%;
 }
+
+@media screen and (width <= 1500px) {
+    .page__back-img_full-screen {
+        inset-block-start: 15%;
+    }
+}

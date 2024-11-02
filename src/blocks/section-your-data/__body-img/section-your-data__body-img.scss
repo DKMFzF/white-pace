@@ -3,6 +3,13 @@
 .section-your-data__body-img {
     display: flex;
     justify-content: center;
+    align-items: center;
     inline-size: 50%;
     background-color: transparent;
+}
+
+@media (width <= 1200px) {
+    .section-your-data__body-img {
+        inline-size: 100%;
+    }
 }

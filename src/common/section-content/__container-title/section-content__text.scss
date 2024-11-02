@@ -1,3 +1,9 @@
 .section-content__container-title {
     padding-inline: 28%;
 }
+
+@media (width <= 1200px) {
+    .section-content__container-title {
+        padding-inline: 0;
+    }
+}

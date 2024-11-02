@@ -2,3 +2,9 @@
     padding-inline-end: 133px;
     gap: 27px;
 }
+
+@media (width <= 1200px) {
+    .section-customise__text-elements {
+        padding-inline-end: 0;
+    }
+}

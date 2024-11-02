@@ -3,3 +3,9 @@
     inline-size: 50%;
     justify-content: center;
 }
+
+@media (width <= 1200px) {
+    .section-project-menagment__section-content {
+        inline-size: 100%;
+    }
+}

@@ -8,3 +8,9 @@
     inline-size: 50%;
     background-color: transparent;
 }
+
+@media (width <= 1200px) {
+    .section-work-together__body-img {
+        inline-size: 100%;
+    }
+}

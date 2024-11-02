@@ -2,7 +2,7 @@
     position: relative;
     line-height: 78px;
     color: black;
-    font-size: 90px;
+    font-size: clamp(2.25rem, 1.5742rem + 2.8833vw, 6.1875rem);
     text-align: center;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }

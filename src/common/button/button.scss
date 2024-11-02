@@ -4,3 +4,9 @@
 .button {
     display: flex;
 }
+
+@media (width <= 1200px) {
+    .button {
+        justify-content: center;
+    }
+}

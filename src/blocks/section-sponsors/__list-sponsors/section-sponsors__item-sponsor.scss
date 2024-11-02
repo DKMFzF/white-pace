@@ -1,5 +1,11 @@
 .section-sponsors__list-sponsors {
     display: flex;
     justify-content: space-between;
-    gap: 15%;
+}
+
+@media (width <= 1200px) {
+    .section-sponsors__list-sponsors {
+        flex-direction: column;
+        gap: 10vh;
+    }
 }

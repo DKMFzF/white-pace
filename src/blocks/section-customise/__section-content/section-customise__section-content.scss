@@ -3,3 +3,9 @@
     margin-block: 48px;
     justify-content: center;
 }
+
+@media (width <= 1200px) {
+    .section-customise__section-content {
+        inline-size: 100%;
+    }
+}

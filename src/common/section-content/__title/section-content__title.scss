@@ -10,3 +10,9 @@
     position: relative;
     z-index: 0;
 }
+
+@media (width <= 1200px) {
+    .section-content__title {
+        text-align: center;
+    }
+}

@@ -3,3 +3,9 @@
     margin-block: 34px;
     justify-content: center;
 }
+
+@media (width <= 1200px) {
+    .section-your-data__content {
+        inline-size: 100%;
+    }
+}

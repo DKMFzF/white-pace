@@ -18,3 +18,22 @@
     box-shadow: 0 0 85px 17px rgb(0 0 0 / 0.2);
     transition: box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease;
 }
+
+@media (width <= 1900px) {
+    .card-user-says__container {
+        block-size: 600px;
+    }
+}
+
+@media (width <= 1380px) {
+    .card-user-says__container {
+        block-size: 700px;
+    }
+}
+
+@media (width <= 1200px) {
+    .card-user-says__container {
+        block-size: 400px;
+        inline-size: 60vw;
+    }
+}

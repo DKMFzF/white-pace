@@ -4,5 +4,11 @@
 .section-content__paragraph {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(1.125rem, 1.1035rem + 0.0915vw, 1.25rem);
+}
+
+@media (width <= 1200px) {
+    .section-content__paragraph {
+        text-align: center;
+    }
 }
