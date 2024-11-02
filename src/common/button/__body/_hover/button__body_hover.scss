@@ -1,0 +1,16 @@
+.button__body_hover:hover {
+    outline: none;
+    border-color: $dark-accent-color;
+    background-color: rgba(255, 228, 146, 1);
+    transform: translateX(-12px) translateY(-22px);
+    box-shadow: 1px 1px 0 $dark-accent-color, 1px 2px 0 #35a7ff, 2px 4px 1px #35a7ff,
+        3px 6px 1px #35a7ff, 4px 8px 1px #50c878, 5px 8px 1px #50c878,
+        6px 10px 0 #50c878, 7px 12px 1px #ffe74c, 8px 14px 1px #ffe74c,
+        9px 16px 1px #ffe74c, 10px 18px 1px #ff5964, 11px 20px 1px #ff5964,
+        12px 22px 0 #ff5964;
+    transition: transform 0.5s ease,
+        background-color 0.5s ease,
+        color 0.5s ease,
+        box-shadow 0.5s ease,
+        border-color 0.5s ease;
+}
