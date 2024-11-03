@@ -17,7 +17,7 @@ setTimeout(() => {
   fontLoader.load(
     'https://threejs.org/examples/fonts/helvetiker_regular.typeface.json',
     (font) => {
-      const textGeometry = new THREE.TextGeometry('writepace', {
+      const textGeometry = new THREE.TextGeometry('whitepace', {
         font: font,
         size: 5,
         height: 1,
@@ -44,7 +44,7 @@ setTimeout(() => {
     }
   );
 
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
   scene.add(ambientLight);
 
   const directionalLight = new THREE.DirectionalLight(0xffffff, 1);

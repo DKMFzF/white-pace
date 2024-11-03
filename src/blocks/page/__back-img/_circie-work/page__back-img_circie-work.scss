@@ -5,26 +5,32 @@
     height: 761px;
 }
 
-@media (width <= 2560px) and (height <= 1080px) {
+@media (width <= 2560px) {
     .page__back-img_circie-work {
         inset-block-start: 73%;
     }
 }
 
-@media (width <= 2100px) and (height <= 1080px) {
+@media (width <= 2100px) {
     .page__back-img_circie-work {
         inset-block-start: 71%;
     }
 }
 
-@media (width <= 1920px) and (height <= 1080px) {
+@media (width <= 1920px) {
     .page__back-img_circie-work {
         inset-block-start: 55%;
     }
 }
 
-@media (width <= 1440px) and (height <= 1080px)  {
+@media (width <= 1440px) {
     .page__back-img_circie-work {
-        inset-block-start: 71%;
+        inset-block-start: 54%;
+    }
+}
+
+@media (width <= 1200px) {
+    .page__back-img_circie-work {
+        inset-block-start: 53%;
     }
 }
