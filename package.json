@@ -51,5 +51,9 @@
   },
   "browserslist": [
     "last 5 versions"
-  ]
+  ],
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "three": "^0.170.0"
+  }
 }
