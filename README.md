@@ -1,5 +1,8 @@
 # WhitePace
 
+## Warring
+THIS IS MY PET PROJECT THAT USES TECHNOLOGIES THAT ARE NEW TO ME, THE SITE HAS PROBLEMS WITH OPTIMIZATION, THINK OF THE SITE AS A CONCEPT
+
 ## Selecting the language in the README file
 
 [Click to select the Russian language](docs/READMEru.md)
